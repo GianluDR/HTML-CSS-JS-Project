@@ -1,0 +1,46 @@
+a, a:hover{
+  color: #ffffff;
+}
+
+.myButton {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.myButton{
+  color: #ffffff;
+  background-color: #ff4422;
+  border-color: #ff4422;
+}
+
+.myButton:hover {
+  background-color: #dd1100;
+  border-color: #ff4422;
+}
+
+.myButton:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 47, 0, 0.5);
+}
+
+.myButton:active {
+  background-color: #dd1100;
+  border-color: #ff4422;
+}
+
+.this{
+  background-color: #ee2211;
+  border-color: #ff4422;
+}
