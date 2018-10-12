@@ -13,9 +13,11 @@ $('#contattami').click( function(){
 
 var testo = 0;
 
-$("#increaseButton").click( function() {
-  var $bar = $("#progressBar");
-  $bar.css({ width : ($bar.width()+57) });
+$('#increaseButton').click( function() {
+  var $bar = $('#progressBar');
+  var $barParent = $bar.parent();
+  var perc = ~~($bar.width() * 100 / $barParent.width());
+  if(perc<100) $bar.css({ width : (perc+15.25) +"%" });
 });
 
 $('#increaseButton').click( function(){
@@ -55,8 +57,10 @@ $('#increaseButton').click( function(){
 });
 
 $("#decreaseButton").click( function() {
-  var $bar = $("#progressBar");
-  $bar.css({ width : ($bar.width()-57) });
+  var $bar = $('#progressBar');
+  var $barParent = $bar.parent();
+  var perc = ~~($bar.width() * 100 / $barParent.width());
+  if(perc>0) $bar.css({ width : (perc-15.5) +"%" });
 });
 
 $("#decreaseButton").click( function() {
