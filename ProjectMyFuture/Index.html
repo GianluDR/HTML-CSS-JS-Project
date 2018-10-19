@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- MyStyle CSS -->
-    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+    <link rel="stylesheet" type="text/css" href="css/StyleDark.css">
+    <link rel="stylesheet" type="text/css" href="css/StyleLight.css">
 
     <!-- SiteDescription -->
     <title>MyFuture</title>
@@ -19,6 +20,13 @@
 
   <body>
     <header>
+      <div id="tema">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button id="Scuro" type="button" class="btn myButton">Scuro</button>
+          <button id="Chiaro" type="button" class="btn myButton">Chiaro</button>
+          <button id="Temi" class="btn myButton special">&#10094;&#10094;</button>
+        </div>
+      </div>
       <h1>Un nuovo programmatore è
         in città!</h1>
       <div class="col text-center">
@@ -30,7 +38,7 @@
       </div>
       <br />
     </header>
-    
+
     <div class="col">
       <div class="w3-content w3-display-container" style="max-width:800px">
         <img class="mySlides" src="img/imgSlide4.jpg" style="width:100%">
