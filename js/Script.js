@@ -46,7 +46,15 @@ window.onload = function(){
     css[3].disabled = true;
     css[2].disabled = false;
   }
+  if(verificaCookie("cookieAccept")){
+    document.getElementById('cookieDiv').style.display="none";
+  }
 }
+
+$('#cookie').click( function(){
+  document.getElementById('cookieDiv').style.display="none";
+  scriviCookie("cookieAccept","true",60)
+});
 
 $('#info').click( function(){
   window.location.href='info.html';
