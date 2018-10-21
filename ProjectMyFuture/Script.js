@@ -1,4 +1,61 @@
 
+var css = document.styleSheets;
+var testo = 0;
+
+function scriviCookie(nomeCookie,valoreCookie,durataCookie){
+  var scadenza = new Date();
+  var adesso = new Date();
+  scadenza.setTime(adesso.getTime() + (parseInt(durataCookie) * 60000));
+  document.cookie = nomeCookie + '=' + escape(valoreCookie) + '; expires=' + scadenza.toGMTString() + '; path=/';
+}
+
+function cancellaCookie(nomeCookie){
+  scriviCookie(nomeCookie,'',-1);
+}
+
+function leggiCookie(nomeCookie)
+{
+  if (document.cookie.length > 0)
+  {
+    var inizio = document.cookie.indexOf(nomeCookie + "=");
+    if (inizio != -1)
+    {
+      inizio = inizio + nomeCookie.length + 1;
+      var fine = document.cookie.indexOf(";",inizio);
+      if (fine == -1) fine = document.cookie.length;
+      return unescape(document.cookie.substring(inizio,fine));
+    }else{
+       return "";
+    }
+  }
+  return "";
+}
+
+function verificaCookie(nomeCookie)
+{
+  var verifica = (document.cookie.indexOf(nomeCookie) != -1) ? true : false;
+  return verifica;
+}
+
+window.onload = function(){
+  var verificaTema = verificaCookie("temaChiaro");
+  if (verificaCookie("temaChiaro")){
+    css[2].disabled = true;
+    css[3].disabled = false;
+  }else if(verificaCookie("temaScuro")){
+    css[3].disabled = true;
+    css[2].disabled = false;
+  }
+  if(verificaCookie("cookieAccept")){
+    document.getElementById('cookieDiv').style.display="none";
+  }
+}
+
+$('#cookie').click( function(){
+  document.getElementById('cookieDiv').style.display="none";
+  scriviCookie("cookieAccept","true",60)
+});
+
 $('#info').click( function(){
   window.location.href='Info.html';
 });
@@ -11,21 +68,23 @@ $('#contattami').click( function(){
   window.location.href='Contattami.html';
 });
 
-var css = document.styleSheets;
-
 $('#Scuro').click( function(){
   //document.styleSheets[2].href = "../css/StyleDark.css";
   css[3].disabled = true;
   css[2].disabled = false;
+  cancellaCookie("temaScuro");
+  scriviCookie("temaScuro","scuro",60);
+  cancellaCookie("temaChiaro");
 });
 
 $('#Chiaro').click( function(){
   //document.styleSheets[2].href = "../css/StyleDark.css";
   css[2].disabled = true;
   css[3].disabled = false;
+  cancellaCookie("temaChiaro");
+  scriviCookie("temaChiaro","chiaro",60);
+  cancellaCookie("temaScuro");
 });
-
-var testo = 0;
 
 $('#increaseButton').click( function() {
   var $bar = $('#progressBar');
