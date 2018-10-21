@@ -49,7 +49,7 @@ window.onload = function(){
 }
 
 $('#info').click( function(){
-  window.location.href='Info.html';
+  window.location.href='info.html';
 });
 
 $('#home').click( function(){
@@ -57,7 +57,7 @@ $('#home').click( function(){
 });
 
 $('#contattami').click( function(){
-  window.location.href='Contattami.html';
+  window.location.href='contattami.html';
 });
 
 $('#Scuro').click( function(){
