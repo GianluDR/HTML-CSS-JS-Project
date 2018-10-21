@@ -1,0 +1,107 @@
+
+label{
+  color: #f2f2f2;
+}
+
+#tema{
+    position: absolute;
+    top: 100px;
+    left: -140px;
+    -webkit-transition: left 200ms ease 0s;
+    -o-transition: left 200ms ease 0s;
+    transition: left 200ms ease 0s;
+}
+
+#tema:hover {
+    left: -5px;
+}
+
+p{
+  font-family:serif;
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+h1{
+  font-family: monospace;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+body{
+  background-image: url('../img/image2.jpg');
+}
+
+.mySlides {
+  display:none
+}
+
+.w3-red, .w3-hover-red:hover{
+  background-color: #3365fe!important;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer
+}
+
+.w3-badge {
+  height:13px;width:13px;padding:0
+}
+
+.myButton{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.myButton{
+  color: #ffffff;
+  background-color: #3365fe;
+  border-color: #3365fe;
+}
+
+.myButton:hover {
+  background-color: #1e49cc;
+  border-color: #1e49cc;
+}
+
+.myButton:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 64, 255, 0.5);
+}
+
+.myButton:active {
+  background-color: #1e49cc;
+  border-color: #1e49cc;
+}
+
+.this{
+  background-color: #2857e6;
+  border-color: #2857e6;
+}
+
+.special:hover {
+	background-color: #3365fe;
+	border-color: #3365fe;
+}
+
+.special:focus {
+	box-shadow: 0 0 0 0rem rgba(0, 64, 255, 0.5);
+}
+
+.special {
+  color: #ffffff;
+	background-color: #3365fe;
+	border-color: #3365fe;
+}
