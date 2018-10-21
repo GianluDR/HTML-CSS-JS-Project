@@ -53,7 +53,7 @@ $('#info').click( function(){
 });
 
 $('#home').click( function(){
-  window.location.href='Index.html';
+  window.location.href='index.html';
 });
 
 $('#contattami').click( function(){
