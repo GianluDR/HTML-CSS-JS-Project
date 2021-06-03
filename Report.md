@@ -1,6 +1,6 @@
 # Relazione Tecnica
 ## INDICE
-- ### [1.](#1-introduzione) Introduzione
+- ### [prova](#prova) Introduzione
 - ### [2.](#2-modello-di-dominio) Modello Di Dominio
 - ### [3.](#3-requisiti-specifici) Requisiti specifici
   - 3.1 Requisiti funzionali
@@ -19,7 +19,7 @@
   
 <br/><br/>
 
-# 1. Introduzione
+# prova
 Nella seguente documentazione verrà descritta la ***relazione tecnica*** del progetto di **Ingegneria del Software Anno Accademico 2020-2021**.<br/><br/>
 Ci presentiamo, siamo il **gruppo Rumbaugh**, composto da: <br/>
 
