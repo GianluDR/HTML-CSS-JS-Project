@@ -1,8 +1,8 @@
 # Relazione Tecnica
 ## INDICE
-- ### [1. prova](#1-prova) Introduzione
-- ### [2. Modello Di Dominio](#2-Modello-Di-Dominio) Modello Di Dominio
-- ### [3. Requisiti specifici](#3-Requisiti-specifici) Requisiti specifici
+- ### [1. prova](#1-prova)
+- ### [2. Modello Di Dominio](#2-Modello-Di-Dominio)
+- ### [3. Requisiti specifici](#3-Requisiti-specifici)
   - 3.1 Requisiti funzionali
   - 3.2 Requisiti non funzionali
 - ### [4.](#4-system-design) System Design
