@@ -1,6 +1,6 @@
 # Relazione Tecnica
 ## INDICE
-- ### [1. prova](#1-prova) prova
+- ### [1.](#1-prova) prova
 - ### [2. Modello Di Dominio](#2-Modello-Di-Dominio)
 - ### [3. Requisiti specifici](#3-Requisiti-specifici)
   - 3.1 Requisiti funzionali
