@@ -36,7 +36,7 @@ Il *progetto* svolto consiste nella realizzazione del gioco della **Dama**, sott
 
 <br/>
 
-# 2 Modello Di Dominio
+# 2. Modello Di Dominio
 
 *I diagrammi che verranno mostrati, all'interno della relazione, sono stati realizzati con **StarUML**.* (https://staruml.io/)
 
