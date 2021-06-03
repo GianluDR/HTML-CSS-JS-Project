@@ -1,7 +1,7 @@
 # Relazione Tecnica
 ## INDICE
 - ### [prova](#prova) Introduzione
-- ### [2.](#2-modello-di-dominio) Modello Di Dominio
+- ### [2.](#2.) Modello Di Dominio
 - ### [3.](#3-requisiti-specifici) Requisiti specifici
   - 3.1 Requisiti funzionali
   - 3.2 Requisiti non funzionali
